@@ -36,7 +36,7 @@ const CalculadoraIMC = () => {
                 <div className="container">
             <form> 
                 <h2 className="center">Calculadora IMC</h2>
-                <h3>Altura</h3>
+                <h3>Altura em metros ex: 1.70</h3>
                 <input value={altura} type="number" placeholder="Altura" onChange={(e)  => setaltura(e.target.value)}/>
                 <h3>Peso em kilograma</h3>
                 <input value={peso} type="number" placeholder="Peso em kilograma" onChange={(e) => setpeso(e.target.value)}/>
