@@ -8,8 +8,8 @@ const CalculadoraIMC = () => {
     const [mensagem, setMensagem] = useState('');
 
     let calculaIMC = () => {
-        if (peso === 0 || altura === 0) {
-            alert('Coloque um valor de peso e altura!')
+        if ( 0 >= peso || 0 >= altura ) {
+            alert('Coloque um valor valido de peso e altura!')
         } else {
             let imc = (peso / (altura * altura))
             setImc(imc.toFixed(2))
